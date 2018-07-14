@@ -1,0 +1,12 @@
+// Our variables
+$header-color: #0F0E0E;
+$header-icons-size: 26px;
+
+
+// COMPONENTS
+@import "global";
+@import "header";
+@import "structure";
+@import "content";
+@import "footer";
+@import "wp-content";

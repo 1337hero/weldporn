@@ -1,0 +1,193 @@
+/* HAMBURGER BTN - DO  NOT TOUCH */
+.menu-btn{
+    width: 60px;
+    height: 75px;
+    cursor: pointer;
+    z-index: 999;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    @media only screen and (min-width: 480px) {
+        width: 74px;
+        height: 74px;
+    }
+    @media only screen and (min-width: 780px){ 
+        display: none;
+    }
+}
+
+.menu-icon{
+    position: relative;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    display: inline-block;   
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-top-color: #ffffff;
+    &::before {
+        content: "";
+        height: 3px;
+        width: 28px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: #ffffff;
+    }
+    &::after {
+        bottom: -2px;
+        content: '';
+        height: 3px;
+        left: 0;
+        position: absolute;
+        width: 18px;
+        background-color: #ffffff;
+    }
+}
+
+.header-main {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    background-color: $header-color;
+
+    .wrapper {
+        height: 75px;
+    }
+
+    @media only screen and (min-width: 780px){ 
+        .wrapper{
+            overflow: visible;
+            height: 90px;
+        }
+    }
+}
+
+body.home {
+    @media only screen and (min-width: 780px){ 
+        .header-main {
+            background-color: transparent;
+            -webkit-transition: left 0.1s ease-in-out;  
+            -moz-transition: left 0.1s ease-in-out; 
+            -o-transition: left 0.1s ease-in-out;
+            transition: left 0.1s ease-in-out;
+            &.bg {
+                background-color: $header-color;
+            }
+        }
+    }
+}
+
+a.logo {
+    display: inline-block;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+
+    z-index: 999;
+
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+     h1 {
+        color: #fff;
+        font-size: 22px;
+        @media only screen and (min-width: 560px) {
+            font-size: 32px;
+        }
+     }
+    
+    @media only screen and (min-width: 780px){
+        top: 24px;
+        left: 0;
+         -webkit-transform: translate(0,0);
+             -ms-transform: translate(0,0);
+                 transform: translate(0,0);
+        h1 {
+            font-size: 42px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.header-links {
+    position: absolute;
+    top: 25px;
+    right: 0;
+
+    display: none;
+    color: #f2f2f2;
+
+    font-size: $header-icons-size;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    a {
+        color: #f2f2f2;
+        &:hover {
+            color: #fff;
+        }
+    }
+    li.links-menu {
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+    }
+    @media only screen and (min-width: 780px){ 
+        display: block;
+    }
+}
+
+.cart-fix {
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    width: 500px;
+    height: 100%;
+    overflow: visibile;
+}
+
+.site-search {
+    position: absolute;
+    top: 50px;
+    left: -247px;
+    display: none;
+    form {
+        box-shadow: 0 20px 10px -10px rgba(0, 0, 0, .3);
+    }
+}
+
+span.circle {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    display: block;
+    background-color: #d14;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.widget_shopping_cart .product_list_widget li {
+    padding: 25px;
+}
+
+body.archive .storefront-sorting {
+    display: none;
+}

@@ -1,0 +1,100 @@
+*, *:after, *:before {
+  position: relative;
+  box-sizing: border-box; 
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+body {
+  margin: 0;
+  padding: 90px 0 0 0;
+  background: #fff;
+  color: #0F0E0E;
+  --x-height-multiplier: 0.35;
+  --baseline-multiplier: 0.179;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.7;
+  font-style: normal;
+  letter-spacing: 0; 
+  &.home {
+    padding: 0;
+  }
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.0435em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; 
+}
+
+a {
+  color: #333;
+  text-decoration: none; 
+}
+
+strong {
+  font-weight: bold; 
+}
+
+::-moz-selection {
+  background: #aaa; 
+}
+
+::selection {
+  background: #aaa; 
+}
+
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+.object-fit_fill { object-fit: fill }
+.object-fit_contain { object-fit: contain }
+.object-fit_cover { object-fit: cover }
+.object-fit_none { object-fit: none }
+.object-fit_scale-down { object-fit: scale-down }
+
+.main {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; 
+    @media only screen and (min-width: 780px) {
+        width: calc( 100% - 100px );
+    }
+}
+

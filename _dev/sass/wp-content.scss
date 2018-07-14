@@ -1,0 +1,212 @@
+/* WOOCOMMERCE OVER-RIDES */
+.storefront-full-width-content .woocommerce-tabs .panel {
+    width: 100%;
+}
+
+.woocommerce-tabs {
+    border-top: 1px solid #ccc;
+}
+
+.site-header-cart .widget_shopping_cart {
+    width: 550px;
+}
+
+.woocommerce-tabs ul.tabs {
+    display: none;
+}
+
+.product_meta {
+    display: none;
+}
+
+img {
+    border-radius: none;
+}
+
+button.alt, input[type="button"].alt,
+input[type="reset"].alt, 
+input[type="submit"].alt, 
+.button.alt, 
+.added_to_cart.alt, 
+.widget-area .widget a.button.alt,
+.added_to_cart,
+.widget a.button.checkout {
+    background-color:#d14;
+    opacity: 1 !important;
+}
+
+.site-search .widget_product_search form input[type=search], 
+.site-search .widget_product_search form input[type=text] {
+    padding: 1em 1.41575em;
+}
+
+ @media only screen and (min-width: 768px) {
+    .storefront-full-width-content .woocommerce-products-header, .storefront-full-width-content.woocommerce-account .entry-header, .storefront-full-width-content.woocommerce-cart .entry-header, .storefront-full-width-content.woocommerce-checkout .entry-header {
+        padding: 0 0 80px !important;
+    }
+    .storefront-breadcrumb {
+        padding: 25px 0;
+        margin: 0;
+    }
+}
+
+#payment .place-order .button {
+    font-size: 24px;
+}
+
+.woocommerce-billing-fields h3,
+h3#order_review_heading,
+h3#ship-to-different-address {
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #333;
+}
+
+h1.entry-title {
+    font-size: 2.5em;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+.size-full {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin: 5px auto 20px;
+}
+
+.added_to_cart, .added_to_cart.alt, .button.alt, .widget a.button.checkout, .widget-area .widget a.button.alt, button.alt, input[type=button].alt, input[type=reset].alt, input[type=submit].alt {
+    background-color: #0077b5;
+}
+
+
+input[type="checkbox"].woocommerce-form__input-checkbox:after {
+    position: absolute;
+    top: -11px;
+    left: -8px;
+    width: 30px;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0c8";
+    font-size: 32px;
+    line-height: 1;
+    color: #6d6d6d;
+    background-color: #fff;
+}
+
+input[type="checkbox"].woocommerce-form__input-checkbox:checked:after {
+    content: "\f14a";
+    color: #0f834d;
+}
+
+#payment .place-order .button:hover {
+    background-color: #0f834d;
+}

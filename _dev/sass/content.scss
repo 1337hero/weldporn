@@ -1,0 +1,171 @@
+.site-main {
+    position: relative;
+    overflow: hidden; 
+    margin: 0 auto;
+    @media only screen and (min-width: 780px){
+        width: calc( 100% - 100px );
+    }
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 100vh - 615px);
+    z-index: 0;
+    margin-top: 75px;
+
+    @media only screen and (min-width: 780px){
+        height: calc( 100vh - 540px);
+        margin-top: 0;
+    }
+    @media only screen and (min-width: 820px) {
+        height: calc( 100vh - 180px);
+    }
+}
+
+figure.slider { 
+    position: relative; 
+    width: 500%;
+    font-size: 0; 
+    height: calc( 100vh - 180px);
+    animation: 30s slidy infinite; 
+    figure { 
+        width: 20%; 
+        height: auto;
+        display: inline-block;  
+        position: inherit; 
+    }
+    img { 
+        width: 100%; 
+        height: auto;
+    }
+}
+
+.gradient-banner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: url(../img/gradient-header.png) 0 0 repeat-x;
+    opacity: 1;
+    display: block;
+    z-index: 999;
+}
+
+.three-column {
+    width: 100%;
+    -js-display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.column {
+    display: inline-block;
+    position: relative;
+    height: 180px;
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    transition: all .5s;
+    overflow: hidden;
+     h2 {
+        color: #fff;
+        z-index: 1;
+        margin-bottom: 5px;
+        position: relative;
+        font-size: 1.5em;
+        top: 65px;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .nice-link {
+        display: inline-block;
+        width: auto;
+        float: none;
+        margin-top: 0;
+        color: #fff;
+        border-color: #fff;
+        top: 60px;
+    }
+    &.bumpers {
+        background: url(../img/bumper-cat-main.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    &.rack {
+        background: url(../img/rack-cat-main.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    &.armor {
+        background: url(../img/armor-cat-main.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    &.nice-link {
+        display: inline-block;
+        width: auto;
+        float: none;
+        margin-top: 0;
+        color: #fff;
+        border-color: #fff;
+        top: 60px;
+    }
+    @media only screen and (min-width: 820px) {
+         max-width: 33.33333%;
+        -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%; 
+    }
+}
+
+.column:hover.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.column:hover .nice-link {
+    border-color: transparent;
+}
+
+.column:hover {
+    transform: scale(1.2);
+}
+
+.intro {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 50px 0 ;
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    p {
+        padding: 30px;
+        font-size: 16px;
+    }
+}
+
+.usa-made {
+    display: block;
+    text-align: center;
+    img {
+        display: block;
+        clear: both;
+        margin: 0 auto;
+    }
+}
