@@ -8,7 +8,6 @@ function availability_filter_func($availability)
     return $availability;
 }
 
-
 /**
  * Change the add to cart text on single product pages
  */
@@ -49,6 +48,7 @@ function woo_archive_custom_cart_button_text() {
     return __('Add to cart', 'woocommerce');
 }
 
+remove_action( 'woocommerce_before_shop_loop', 'storefront_woocommerce_pagination', 30 );
 
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tab', 98);
 function woo_rename_tab($tabs) {

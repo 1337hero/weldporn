@@ -53,7 +53,7 @@ gulp.task('watch' , () => {
 // Setup a Gulp Server with Browser Sync
 gulp.task('serve', ['makeCSS', 'makeJS'], function() {
     browserSync.init({
-        proxy: 'dethloffmfg.beta:8888'
+        proxy: 'dethloffmfg.beta:7888'
     });
     gulp.watch(src + '/sass/*.scss', ['makeCSS']);
     gulp.watch(paths.js, ['makeJS']);

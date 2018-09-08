@@ -11,11 +11,12 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Connect with Us</h3>
-                    <ul>
-                        <li><i class="icon-phone"></i> (909) 319-6352</li>
-                        <li><i class="icon-mail"></i> <a href="mailto:sales@dethloffmfg.com">sales@dethloffmfg.com</a></li>
-                        <li><i class="icon-location"></i> Tigard, OR 97223</li>
-                        <li><i class="icon-clock"></i> 8:00 - 17:00 PST, Mon - Sat</li>
+                    <ul class="details">
+                        <li><i class="fas fa-phone"></i> (909) 319-6352</li>
+                        <li><i class="fa fa-envelope"></i> <a href="mailto:sales@dethloffmfg.com">sales@dethloffmfg.com</a></li>
+                        <li><i class="fa fa-clock"></i> 8:00 - 17:00 PST, Mon - Sat</li>
+                        <li><i class="fa fa-map-marker-alt"></i> 16224 SW Roshak Rd <br> Tigard, OR 97223</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -40,14 +41,14 @@
         </nav>
 
         <ul class="sidebar-info">
-            <li><a href="tel:909-319-6352">909-319-6352</a></li>
+            <li><a href="tel:909-319-6352"><i class="fas fa-phone"></i> 909-319-6352</a><br><br></li>
             <li class="addy">
-                <span>16224 SW Roshak Rd</span><br><span> Tigard, OR 97223</span><br>
-                <span>8:00 - 17:00 PST,</span><br><span> Monday - Saturday</span>
+                    <a href="https://goo.gl/maps/MNxqNVMhiVU2"><span> <i class="fa fa-map-marker-alt"></i> <br>16224 SW Roshak Rd</span><br><span> Tigard, OR 97223</span></a><br><br>
+                    <span><i class="fa fa-clock"></i> 8:00 - 17:00 PST,</span><br><span> Monday - Saturday</span>
             </li>
 
             <li>
-                <a href="mailto:sales@dethloffmfg.com">EMAIL US</a>
+                <a href="mailto:sales@dethloffmfg.com"><i class="fa fa-envelope"></i> EMAIL US</a>
             </li>
             <li>    
                 <a href="#">Shipping & Returns</a>
@@ -57,7 +58,6 @@
             </li>
         </ul>
     </div>
-
 
     <?php wp_footer(); ?>
 

@@ -63,11 +63,25 @@ footer {
 .footer-nav,
 .footer-contact {
     flex-grow: 2;
+    ul.details li > i {
+        margin-right: 5px;
+        color: #6d6d6d;
+    }
     @media only screen and (min-width: 820px) {
         text-align: center;
     }
 }
 
+
+.social-share {
+    a {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    i {
+        font-family: "Font Awesome 5 Brands";
+    }
+}
 
 .sidebar-navigation{
     position: fixed;

@@ -80,10 +80,10 @@ body.home {
     @media only screen and (min-width: 780px){ 
         .header-main {
             background-color: transparent;
-            -webkit-transition: left 0.1s ease-in-out;  
-            -moz-transition: left 0.1s ease-in-out; 
-            -o-transition: left 0.1s ease-in-out;
-            transition: left 0.1s ease-in-out;
+            -webkit-transition: left 0.5s ease-in-out;  
+            -moz-transition: left 0.5s ease-in-out; 
+            -o-transition: left 0.5s ease-in-out;
+            transition: left 0.5s ease-in-out;
             &.bg {
                 background-color: $header-color;
             }
@@ -153,10 +153,9 @@ a.logo {
 
 .cart-fix {
     position: absolute;
-    top: 0px;
+    top: 50px;
     left: -500px;
     width: 500px;
-    height: 100%;
     overflow: visibile;
 }
 
@@ -190,4 +189,105 @@ span.circle {
 
 body.archive .storefront-sorting {
     display: none;
+}
+
+$toggle-size: 26px;
+
+#nav-container {
+    margin-left: auto;
+    position: relative;
+}
+
+#nav-toggle {
+    display: inline-block;
+
+    height: 26px;
+
+    cursor: pointer;
+
+    transform: rotate(0deg);
+}
+
+
+#nav-toggle.open  {
+    color:#d14; 
+}
+
+
+#nav-overlay {
+    position: absolute;
+    top: $toggle-size / 2;
+    left: $toggle-size / 2;
+
+    z-index: -1;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    border-radius: 50%;
+
+    transition: 1s;
+    transform: scale3d(0, 0, 0);
+}
+
+#nav-overlay.open {
+    transform: scale3d(1, 1, 1);
+}
+
+#nav-fullscreen {
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    transition: ease-in-out 0.25s;
+    transition-delay: 0s;
+
+    visibility: hidden;
+    opacity: 0;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#nav-fullscreen.open {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+    transition-delay: 0.25s;
+}
+
+
+#nav-toggle span {
+    background-color: white;
+}
+
+#nav-fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-size: 8vh;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.0435em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    li {
+        padding: 15px 0;
+    }
+    li:hover {
+        a {
+          color: #d14;  
+        }
+        
+    }
 }

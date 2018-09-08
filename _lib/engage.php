@@ -1,12 +1,9 @@
 <?php
 
 // Optimize WooCommerce Scripts
- add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
- 
-function sf_child_theme_dequeue_style() {
-    wp_dequeue_style( 'storefront-style' );
-     wp_dequeue_style( 'storefront-fonts' );
-    wp_dequeue_style( 'storefront-woocommerce-style' );
+add_action( 'wp_enqueue_scripts', 'storefront_social_icons_enqueue_fab' );
+function storefront_social_icons_enqueue_fab() {
+    wp_enqueue_style( 'font-awesome-5-brands', '//use.fontawesome.com/releases/v5.0.13/css/brands.css' );
 }
 
 // Add Custom styles
@@ -60,7 +57,8 @@ function weld_navigation() {
   register_nav_menus(
     array(
       'nav-1' => __( 'Main Nav' ),
-      'footer-1' => __( 'Footer-1' ),
+      'shop-head' => __( 'Shop' ),
+      'footer-1' => __( 'Footer-1' )
     )
   );
 }

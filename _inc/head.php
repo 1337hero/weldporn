@@ -8,9 +8,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
 
     <link rel="shortcut icon" href="favicon.ico">
-     
-    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
+    
     <?php wp_head(); ?>
 
 </head>
