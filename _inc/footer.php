@@ -15,7 +15,7 @@
                         <li><i class="fas fa-phone"></i> (909) 319-6352</li>
                         <li><i class="fa fa-envelope"></i> <a href="mailto:sales@dethloffmfg.com">sales@dethloffmfg.com</a></li>
                         <li><i class="fa fa-clock"></i> 8:00 - 17:00 PST, Mon - Sat</li>
-                        <li><i class="fa fa-map-marker-alt"></i> 16224 SW Roshak Rd <br> Tigard, OR 97223</li>
+                        <li><i class="fa fa-map-marker-alt"></i>Tigard, OR 97223</li>
                         
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
         <ul class="sidebar-info">
             <li><a href="tel:909-319-6352"><i class="fas fa-phone"></i> 909-319-6352</a><br><br></li>
             <li class="addy">
-                    <a href="https://goo.gl/maps/MNxqNVMhiVU2"><span> <i class="fa fa-map-marker-alt"></i> <br>16224 SW Roshak Rd</span><br><span> Tigard, OR 97223</span></a><br><br>
+                    <span> <i class="fa fa-map-marker-alt"></i><span> Tigard, OR 97223</span><br><br>
                     <span><i class="fa fa-clock"></i> 8:00 - 17:00 PST,</span><br><span> Monday - Saturday</span>
             </li>
 
